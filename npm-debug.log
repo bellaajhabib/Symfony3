@@ -1,225 +1,160 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
-1 verbose cli   'install',
-1 verbose cli   '-g',
-1 verbose cli   'generator-grunt-symfony' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.37
-4 verbose node symlink /usr/bin/node
-5 verbose cache add [ 'generator-grunt-symfony', null ]
-6 verbose cache add name=undefined spec="generator-grunt-symfony" args=["generator-grunt-symfony",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: 'generator-grunt-symfony',
-7 verbose parsed url   path: 'generator-grunt-symfony',
-7 verbose parsed url   href: 'generator-grunt-symfony' }
-8 silly lockFile c800610b-generator-grunt-symfony generator-grunt-symfony
-9 verbose lock generator-grunt-symfony /home/mehdi/.npm/c800610b-generator-grunt-symfony.lock
-10 silly lockFile c800610b-generator-grunt-symfony generator-grunt-symfony
-11 silly lockFile c800610b-generator-grunt-symfony generator-grunt-symfony
-12 verbose addNamed [ 'generator-grunt-symfony', '' ]
-13 verbose addNamed [ null, '*' ]
-14 silly lockFile 877c8338-generator-grunt-symfony generator-grunt-symfony@
-15 verbose lock generator-grunt-symfony@ /home/mehdi/.npm/877c8338-generator-grunt-symfony.lock
-16 silly addNameRange { name: 'generator-grunt-symfony', range: '*', hasData: false }
-17 verbose request where is /generator-grunt-symfony
-18 verbose request registry https://registry.npmjs.org/
-19 verbose request id b2770c6868153d62
-20 verbose url raw /generator-grunt-symfony
-21 verbose url resolving [ 'https://registry.npmjs.org/', './generator-grunt-symfony' ]
-22 verbose url resolved https://registry.npmjs.org/generator-grunt-symfony
-23 verbose request where is https://registry.npmjs.org/generator-grunt-symfony
-24 info trying registry request attempt 1 at 12:50:24
-25 http GET https://registry.npmjs.org/generator-grunt-symfony
-26 http 200 https://registry.npmjs.org/generator-grunt-symfony
-27 silly registry.get cb [ 200,
-27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-27 silly registry.get     etag: '"9G20YLOR8NKMABM8Z0HSLF3J3"',
-27 silly registry.get     'content-type': 'application/json',
-27 silly registry.get     'cache-control': 'max-age=300',
-27 silly registry.get     'content-length': '67689',
-27 silly registry.get     'accept-ranges': 'bytes',
-27 silly registry.get     date: 'Mon, 04 Apr 2016 11:50:29 GMT',
-27 silly registry.get     via: '1.1 varnish',
-27 silly registry.get     age: '0',
-27 silly registry.get     connection: 'keep-alive',
-27 silly registry.get     'x-served-by': 'cache-ams4139-AMS',
-27 silly registry.get     'x-cache': 'MISS',
-27 silly registry.get     'x-cache-hits': '0',
-27 silly registry.get     'x-timer': 'S1459770628.647718,VS0,VE717',
-27 silly registry.get     vary: 'Accept' } ]
-28 silly addNameRange number 2 { name: 'generator-grunt-symfony', range: '*', hasData: true }
-29 silly addNameRange versions [ 'generator-grunt-symfony',
-29 silly addNameRange   [ '0.0.2',
-29 silly addNameRange     '0.0.3',
-29 silly addNameRange     '0.0.4',
-29 silly addNameRange     '0.0.5',
-29 silly addNameRange     '0.0.6',
-29 silly addNameRange     '0.0.7',
-29 silly addNameRange     '0.0.8',
-29 silly addNameRange     '0.1.0',
-29 silly addNameRange     '0.1.1',
-29 silly addNameRange     '0.1.2',
-29 silly addNameRange     '0.1.3',
-29 silly addNameRange     '0.1.4',
-29 silly addNameRange     '0.2.0',
-29 silly addNameRange     '0.2.1',
-29 silly addNameRange     '0.2.2',
-29 silly addNameRange     '0.2.3',
-29 silly addNameRange     '0.3.0',
-29 silly addNameRange     '0.3.1',
-29 silly addNameRange     '0.3.2',
-29 silly addNameRange     '0.3.3',
-29 silly addNameRange     '0.3.4',
-29 silly addNameRange     '0.3.5',
-29 silly addNameRange     '0.3.6',
-29 silly addNameRange     '0.3.7',
-29 silly addNameRange     '0.4.0',
-29 silly addNameRange     '0.4.1',
-29 silly addNameRange     '0.5.0',
-29 silly addNameRange     '0.5.1',
-29 silly addNameRange     '0.5.2',
-29 silly addNameRange     '0.6.0',
-29 silly addNameRange     '0.7.0',
-29 silly addNameRange     '0.7.1',
-29 silly addNameRange     '0.7.2',
-29 silly addNameRange     '0.8.0',
-29 silly addNameRange     '0.9.0',
-29 silly addNameRange     '0.9.1',
-29 silly addNameRange     '0.9.2',
-29 silly addNameRange     '0.10.0' ] ]
-30 verbose addNamed [ 'generator-grunt-symfony', '0.10.0' ]
-31 verbose addNamed [ '0.10.0', '0.10.0' ]
-32 silly lockFile 8dd82a6b-generator-grunt-symfony-0-10-0 generator-grunt-symfony@0.10.0
-33 verbose lock generator-grunt-symfony@0.10.0 /home/mehdi/.npm/8dd82a6b-generator-grunt-symfony-0-10-0.lock
-34 silly lockFile 2e9452f7-nerator-grunt-symfony-0-10-0-tgz https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz
-35 verbose lock https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz /home/mehdi/.npm/2e9452f7-nerator-grunt-symfony-0-10-0-tgz.lock
-36 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz',
-36 verbose addRemoteTarball   '7243a03ea99c426d7a55f21a9581afcc301990c7' ]
-37 info retry fetch attempt 1 at 12:50:25
-38 verbose fetch to= /tmp/npm-18118-i484oyP_/registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz
-39 http GET https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz
-40 http 200 https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz
-41 silly lockFile 2e9452f7-nerator-grunt-symfony-0-10-0-tgz https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz
-42 silly lockFile 2e9452f7-nerator-grunt-symfony-0-10-0-tgz https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz
-43 silly lockFile 8dd82a6b-generator-grunt-symfony-0-10-0 generator-grunt-symfony@0.10.0
-44 silly lockFile 8dd82a6b-generator-grunt-symfony-0-10-0 generator-grunt-symfony@0.10.0
-45 silly lockFile 877c8338-generator-grunt-symfony generator-grunt-symfony@
-46 silly lockFile 877c8338-generator-grunt-symfony generator-grunt-symfony@
-47 silly resolved [ { name: 'generator-grunt-symfony',
-47 silly resolved     version: '0.10.0',
-47 silly resolved     description: 'Yeoman generator to scaffold Symfony PHP apps with full featured frontend tooling incl. browsersync',
-47 silly resolved     license: 'MIT',
-47 silly resolved     main: 'app/index.js',
-47 silly resolved     repository:
-47 silly resolved      { type: 'git',
-47 silly resolved        url: 'git+https://github.com/bezoerb/generator-grunt-symfony.git' },
-47 silly resolved     author: { name: 'Ben Zörb', url: 'https://github.com/bezoerb' },
-47 silly resolved     engines: { node: '>=0.10.0' },
-47 silly resolved     scripts: { test: 'grunt test' },
-47 silly resolved     files: [ 'app' ],
-47 silly resolved     keywords:
-47 silly resolved      [ 'yeoman-generator',
-47 silly resolved        'symfony',
-47 silly resolved        'php',
-47 silly resolved        'grunt',
-47 silly resolved        'browsersync',
-47 silly resolved        'jspm',
-47 silly resolved        'requirejs',
-47 silly resolved        'sass',
-47 silly resolved        'less',
-47 silly resolved        'stylus' ],
-47 silly resolved     dependencies:
-47 silly resolved      { chalk: '1.1.1',
-47 silly resolved        'fs-extra': '0.26.7',
-47 silly resolved        'html-wiring': '1.2.0',
-47 silly resolved        inquirer: '0.12.0',
-47 silly resolved        'js-yaml': '3.5.4',
-47 silly resolved        lodash: '4.6.1',
-47 silly resolved        'string-length': '1.0.1',
-47 silly resolved        'update-notifier': '0.6.3',
-47 silly resolved        'yeoman-generator': '0.22.5',
-47 silly resolved        yo: '1.7.0',
-47 silly resolved        yosay: '1.1.0' },
-47 silly resolved     devDependencies:
-47 silly resolved      { chai: '3.5.0',
-47 silly resolved        'cross-spawn': '2.1.5',
-47 silly resolved        debug: '2.2.0',
-47 silly resolved        'es6-promise': '3.1.2',
-47 silly resolved        glob: '7.0.3',
-47 silly resolved        grunt: '0.4.5',
-47 silly resolved        'grunt-contrib-clean': '1.0.0',
-47 silly resolved        'grunt-contrib-jshint': '1.0.0',
-47 silly resolved        'grunt-exec': '0.4.6',
-47 silly resolved        'grunt-simple-mocha': '0.4.1',
-47 silly resolved        'indent-string': '2.1.0',
-47 silly resolved        'jshint-stylish': '2.1.0',
-47 silly resolved        'load-grunt-tasks': '3.4.1',
-47 silly resolved        mocha: '2.4.5',
-47 silly resolved        shelljs: '0.6.0',
-47 silly resolved        'yeoman-assert': '2.1.1',
-47 silly resolved        'yeoman-test': '1.1.0' },
-47 silly resolved     gitHead: '1e3d203c1145a761e637a868c03c701c5c46a51a',
-47 silly resolved     bugs: { url: 'https://github.com/bezoerb/generator-grunt-symfony/issues' },
-47 silly resolved     homepage: 'https://github.com/bezoerb/generator-grunt-symfony#readme',
-47 silly resolved     _id: 'generator-grunt-symfony@0.10.0',
-47 silly resolved     _shasum: '7243a03ea99c426d7a55f21a9581afcc301990c7',
-47 silly resolved     _from: 'generator-grunt-symfony@',
-47 silly resolved     _npmVersion: '3.6.0',
-47 silly resolved     _nodeVersion: '5.6.0',
-47 silly resolved     _npmUser: { name: 'bezoerb', email: 'ben@sommerlaune.com' },
-47 silly resolved     dist:
-47 silly resolved      { shasum: '7243a03ea99c426d7a55f21a9581afcc301990c7',
-47 silly resolved        tarball: 'https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz' },
-47 silly resolved     maintainers: [ [Object] ],
-47 silly resolved     _npmOperationalInternal:
-47 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
-47 silly resolved        tmp: 'tmp/generator-grunt-symfony-0.10.0.tgz_1458230553943_0.109475526958704' },
-47 silly resolved     directories: {},
-47 silly resolved     _resolved: 'https://registry.npmjs.org/generator-grunt-symfony/-/generator-grunt-symfony-0.10.0.tgz' } ]
-48 info install generator-grunt-symfony@0.10.0 into /usr/lib
-49 info installOne generator-grunt-symfony@0.10.0
-50 verbose lib/node_modules/generator-grunt-symfony unbuild
-51 verbose tar unpack /home/mehdi/.npm/generator-grunt-symfony/0.10.0/package.tgz
-52 silly lockFile a2128343--modules-generator-grunt-symfony tar:///usr/lib/node_modules/generator-grunt-symfony
-53 verbose lock tar:///usr/lib/node_modules/generator-grunt-symfony /home/mehdi/.npm/a2128343--modules-generator-grunt-symfony.lock
-54 silly lockFile 4f62d7b3-grunt-symfony-0-10-0-package-tgz tar:///home/mehdi/.npm/generator-grunt-symfony/0.10.0/package.tgz
-55 verbose lock tar:///home/mehdi/.npm/generator-grunt-symfony/0.10.0/package.tgz /home/mehdi/.npm/4f62d7b3-grunt-symfony-0-10-0-package-tgz.lock
-56 silly gunzTarPerm modes [ '755', '644' ]
-57 error Error: EACCES, mkdir '/usr/lib/node_modules/generator-grunt-symfony'
-57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/generator-grunt-symfony']
-57 error   errno: 3,
-57 error   code: 'EACCES',
-57 error   path: '/usr/lib/node_modules/generator-grunt-symfony',
-57 error   fstream_type: 'Directory',
-57 error   fstream_path: '/usr/lib/node_modules/generator-grunt-symfony',
-57 error   fstream_class: 'DirWriter',
-57 error   fstream_stack:
-57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
-57 error      'Object.oncomplete (fs.js:108:15)' ] }
-58 error Please try running this command again as root/Administrator.
-59 error System Linux 3.2.0-36-generic
-60 error command "/usr/bin/node" "/usr/local/bin/npm" "install" "-g" "generator-grunt-symfony"
-61 error cwd /var/www/symfony3
-62 error node -v v0.10.37
-63 error npm -v 1.4.28
-64 error path /usr/lib/node_modules/generator-grunt-symfony
-65 error fstream_path /usr/lib/node_modules/generator-grunt-symfony
-66 error fstream_type Directory
-67 error fstream_class DirWriter
-68 error code EACCES
-69 error errno 3
-70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/generator-grunt-symfony'
-71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
-71 error fstream_stack Object.oncomplete (fs.js:108:15)
-72 verbose exit [ 3, true ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'bower' ]
+2 info using npm@3.8.5
+3 info using node@v0.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData bower
+8 silly fetchNamedPackageData bower
+9 silly mapToRegistry name bower
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data { raw: 'bower',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'bower',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bower
+14 verbose request uri https://registry.npmjs.org/bower
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 16:56:22
+17 verbose request id 118ed8b25d5f170c
+18 verbose etag "1HNSFKUO8MW4NTTT4R2LO9VTR"
+19 http request GET https://registry.npmjs.org/bower
+20 http 200 https://registry.npmjs.org/bower
+21 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+21 verbose headers   etag: '"9IW84AVLMHAFMQ4HHCXA5RZJT"',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'content-length': '20315',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Tue, 05 Apr 2016 15:56:25 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   age: '50',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '4',
+21 verbose headers   'x-timer': 'S1459871785.126487,VS0,VE0',
+21 verbose headers   vary: 'Accept' }
+22 silly get cb [ 200,
+22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly get     etag: '"9IW84AVLMHAFMQ4HHCXA5RZJT"',
+22 silly get     'content-type': 'application/json',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'content-length': '20315',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Tue, 05 Apr 2016 15:56:25 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '50',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-lcy1120-LCY',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '4',
+22 silly get     'x-timer': 'S1459871785.126487,VS0,VE0',
+22 silly get     vary: 'Accept' } ]
+23 verbose get saving bower to /home/mehdi/.npm/registry.npmjs.org/bower/.cache.json
+24 verbose correctMkdir /home/mehdi/.npm correctMkdir not in flight; initializing
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule bower@1.7.9 checking installable status
+38 silly cache add args [ 'bower', null ]
+39 verbose cache add spec bower
+40 silly cache add parsed spec { raw: 'bower',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'bower',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed bower@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for bower
+43 info addNameTag [ 'bower', 'latest' ]
+44 silly mapToRegistry name bower
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry data { raw: 'bower',
+47 silly mapToRegistry   scope: null,
+47 silly mapToRegistry   name: 'bower',
+47 silly mapToRegistry   rawSpec: '',
+47 silly mapToRegistry   spec: 'latest',
+47 silly mapToRegistry   type: 'tag' }
+48 silly mapToRegistry uri https://registry.npmjs.org/bower
+49 verbose addNameTag registry:https://registry.npmjs.org/bower not in flight; fetching
+50 verbose get https://registry.npmjs.org/bower not expired, no request
+51 silly addNameTag next cb for bower with tag latest
+52 silly addNamed bower@1.7.9
+53 verbose addNamed "1.7.9" is a plain semver version for bower
+54 silly mapToRegistry name bower
+55 silly mapToRegistry using default registry
+56 silly mapToRegistry registry https://registry.npmjs.org/
+57 silly mapToRegistry data { raw: 'bower',
+57 silly mapToRegistry   scope: null,
+57 silly mapToRegistry   name: 'bower',
+57 silly mapToRegistry   rawSpec: '',
+57 silly mapToRegistry   spec: 'latest',
+57 silly mapToRegistry   type: 'tag' }
+58 silly mapToRegistry uri https://registry.npmjs.org/bower
+59 verbose addRemoteTarball https://registry.npmjs.org/bower/-/bower-1.7.9.tgz not in flight; adding
+60 verbose addRemoteTarball [ 'https://registry.npmjs.org/bower/-/bower-1.7.9.tgz',
+60 verbose addRemoteTarball   'b7296c2393e0d75edaa6ca39648132dd255812b0' ]
+61 info retry fetch attempt 1 at 16:56:23
+62 info attempt registry request try #1 at 16:56:23
+63 http fetch GET https://registry.npmjs.org/bower/-/bower-1.7.9.tgz
+64 http fetch 200 https://registry.npmjs.org/bower/-/bower-1.7.9.tgz
+65 silly fetchAndShaCheck shasum b7296c2393e0d75edaa6ca39648132dd255812b0
+66 verbose addTmpTarball /tmp/npm-5345-603ce87c/registry.npmjs.org/bower/-/bower-1.7.9.tgz not in flight; adding
+67 verbose addTmpTarball already have metadata; skipping unpack for bower@1.7.9
+68 verbose correctMkdir /home/mehdi/.npm correctMkdir not in flight; initializing
+69 silly cache afterAdd bower@1.7.9
+70 verbose afterAdd /home/mehdi/.npm/bower/1.7.9/package/package.json not in flight; writing
+71 verbose correctMkdir /home/mehdi/.npm correctMkdir not in flight; initializing
+72 verbose afterAdd /home/mehdi/.npm/bower/1.7.9/package/package.json written
+73 silly loadAllDepsIntoIdealTree Finishing
+74 silly idealTree:prePrune lib
+74 silly idealTree:prePrune └── bower@1.7.9
+75 silly loadIdealTree Finishing
+76 silly currentTree lib
+77 silly idealTree lib
+77 silly idealTree └── bower@1.7.9
+78 silly generateActionsToTake Starting
+79 silly install generateActionsToTake
+80 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+81 silly rollbackFailedOptional Starting
+82 silly rollbackFailedOptional Finishing
+83 silly runTopLevelLifecycles Starting
+84 silly runTopLevelLifecycles Finishing
+85 silly install printInstalled
+86 verbose stack Error: EACCES, access '/usr/local/lib/node_modules'
+86 verbose stack     at module.exports (/usr/local/lib/node_modules/npm/lib/install/access-error.js:4:18)
+86 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/writable.js:30:25
+86 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:232:16
+86 verbose stack     at Object.oncomplete (fs.js:93:15)
+87 verbose cwd /var/www/symfony3
+88 error Linux 3.2.0-36-generic
+89 error argv "node" "/usr/local/bin/npm" "install" "-g" "bower"
+90 error node v0.10.0
+91 error npm  v3.8.5
+92 error path /usr/local/lib/node_modules
+93 error code EACCES
+94 error Error: EACCES, access '/usr/local/lib/node_modules'
+94 error     at module.exports (/usr/local/lib/node_modules/npm/lib/install/access-error.js:4:18)
+94 error     at /usr/local/lib/node_modules/npm/lib/install/writable.js:30:25
+94 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:232:16
+94 error     at Object.oncomplete (fs.js:93:15)
+94 error  { [Error: EACCES, access '/usr/local/lib/node_modules'] code: 'EACCES', path: '/usr/local/lib/node_modules' }
+95 error Please try running this command again as root/Administrator.
+96 verbose exit [ 1, true ]
