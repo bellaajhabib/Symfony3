@@ -17,6 +17,6 @@
 /bower_components/
 /node_modules/
 /.gitignore
-/.idea/
+.idea/
 /habib.html
 
