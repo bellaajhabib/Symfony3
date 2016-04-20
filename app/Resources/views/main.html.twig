@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+    {% block stylesheets %}
+    {% stylesheets '@MainBundle/Resources/public/css/bootstrap.min.css'  filter='cssrewrite'%}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+
+    <link rel="icon" type="image/x-icone" href="{{ asset('favicon.ico') }}"/>
+</head>
+        <body >
+
+        {% block body %}Base{% endblock %}
+        {% javascripts '@MainBundle/Resources/public/js/jquery.min.js'
+                       '@MainBundle/Resources/public/js/bootstrap.min.js'%}
+        <script src="{{ asset_url }}"></script>
+        {{ asset_url }}
+        {% endjavascripts %}
+
+        </body>
+
+</html>
