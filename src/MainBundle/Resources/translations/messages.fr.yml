@@ -1,0 +1,7 @@
+base:
+  tile: Bienvenu sue le site Habib
+
+head:
+  title: Bienvenue sur Habib
+  msg : message de habib
+  button: envoyée
