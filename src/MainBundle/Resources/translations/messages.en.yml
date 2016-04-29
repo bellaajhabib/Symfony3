@@ -1,34 +1,34 @@
 base:
-  tile: Bienvenu sue le site Habib
+  tile: Welcome one le site Habib
 
 navbar:
-    home: Acceuil
+    home: Home
     services: Services
     contact: Contact
 
 head:
-  title: Bienvenue sur Habib
-  msg : message de habib
-  button: envoyée
+  title: Welcom to Habib
+  msg : Video de habib
+  button: Check
 
 breadcrumb:
-      home: Accueil
+      home: Home
       services: Services
       contact: Contact
 
 panel:
     1:
       title: titre1
-      list: sousmenu1
+      list: submenu1
       details: details
     2:
       title: titre2
-      list: sousmenu2
+      list: submenu2
       details: details
 
     3:
        title: titre3
-       list: sousmenu3
+       list: submenu3
        details: details
 footer:
     title1: footer1
