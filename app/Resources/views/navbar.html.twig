@@ -1,21 +1,49 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">Project name </a>
         </div>
-
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="{{ path("re_main") }}"/>{{ 'navbar.home'|trans }}</a>
-                <li class=""><a href="#"/>{{ 'navbar.services'|trans }}</a>
-                <li class=""><a href="#"/>{{ 'navbar.contact'|trans }}</a>
+        <div id="navbar" class="nav  navbar-nav">
+            <ul class="nav navbar-nav">
+                {% if(app.request.getLocale()) =='fr' %}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Langue</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="dropdown-header"><strong>{{ 'navbar.choix'|trans }}</strong></li>
+                                    <li class="active"><a href="#">Fr </a></li>
+                                    <li class="">
+                                        <a href="{{ path(app.request.get('_route'),app.request.get('_route_params')| merge({'_locale':'en'})) }}">En</a>
+                                    </li>
+                                </ul>
+                        </li>
+                {% endif %}
+                {% if(app.request.getLocale()) =='en' %}
+                        <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Langue</a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="dropdown-header"><strong>{{ 'navbar.choix'|trans }}</strong></li>
+                                    <li class="">
+                                        <a  href="{{ path(app.request.get('_route'),app.request.get('_route_params')| merge({'_locale':'fr'})) }}"  >Fr</a>
+                                    </li>
+                                    <li class="active"><a href="#">En</a></li>
+                                </ul>
+                        </li>
+                {% endif %}
             </ul>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="{{ path("re_main") }}"/>{{ 'navbar.home'|trans }}</a>
+                        <li class=""><a href="#"/>{{ 'navbar.services'|trans }}</a>
+                        <li class=""><a href="#"/>{{ 'navbar.contact'|trans }}</a>
+                    </ul>
         </div><!--/.navbar-collapse -->
     </div>
 </nav>

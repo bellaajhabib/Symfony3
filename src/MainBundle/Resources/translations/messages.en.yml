@@ -5,6 +5,7 @@ navbar:
     home: Home
     services: Services
     contact: Contact
+    choix: choice
 
 head:
   title: Welcom to Habib
