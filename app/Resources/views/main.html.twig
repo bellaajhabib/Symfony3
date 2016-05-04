@@ -8,10 +8,10 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
 
     {% block stylesheets %}
-    {% stylesheets '@MainBundle/Resources/public/css/bootstrap.min.css'
-                   '@MainBundle/Resources/public/css/font-awseom.min.css'
-                    '@MainBundle/Resources/public/css/main.css'
-    filter='cssrewrite'%}
+        {% stylesheets '@MainBundle/Resources/public/css/bootstrap.min.css'
+        '@MainBundle/Resources/public/css/font-awseom.min.css'
+        '@MainBundle/Resources/public/css/main.css'
+        '@MainBundle/Resources/public/css/form.css' filter='cssrewrite' %}
         <link rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}
     {% endblock %}
@@ -21,14 +21,16 @@
         <body >
 
         {% block body %}Base{% endblock %}
-        {% javascripts '@MainBundle/Resources/public/js/jquery.min.js'
-                       '@MainBundle/Resources/public/js/bootstrap.min.js'
-                         '@MainBundle/Resources/public/js/js.js'
-        %}
-        <script src="{{ asset_url }}"></script>
-       
-        {% endjavascripts %}
 
+
+        {% block javascript %}
+            {% javascripts '@MainBundle/Resources/public/js/jquery.min.js'
+            '@MainBundle/Resources/public/js/bootstrap.min.js'
+            '@MainBundle/Resources/public/js/main.js'
+            '@MainBundle/Resources/public/js/form.js' %}
+            <script src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
         </body>
 
 </html>

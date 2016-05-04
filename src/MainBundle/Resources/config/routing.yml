@@ -1,9 +1,15 @@
 re_main:
-    path: /{_locale}/site
+    path:     /{_locale}/site
     defaults: { _controller: MainBundle:Default:index }
     requirements:
         _locale: en|fr
-re_test:
-     path: /test
-     defaults: { _controller: MainBundle:Default:test}
 
+re_contact:
+    path:     /{_locale}/contact
+    defaults: { _controller: MainBundle:Default:contact }
+    requirements:
+        _locale: en|fr
+
+re_test:
+    path:     /test
+    defaults: { _controller: MainBundle:Default:test }
