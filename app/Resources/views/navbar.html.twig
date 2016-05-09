@@ -1,56 +1,67 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name </a>
+            <a class="navbar-brand" href="https://github.com/DamienChiboub/symfo_tuto" target="_blank">{{ 'navbar.brand'|trans }}</a>
         </div>
-        <div id="navbar" class="nav  navbar-nav">
+
+        <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                {% if(app.request.getLocale()) =='fr' %}
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Langue</a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class="dropdown-header"><strong>{{ 'navbar.choix'|trans }}</strong></li>
-                                    <li class="active"><a href="#">Fr </a></li>
-                                    <li class="">
-                                        <a href="{{ path(app.request.get('_route'),app.request.get('_route_params')| merge({'_locale':'en'})) }}">En</a>
-                                    </li>
-                                </ul>
-                        </li>
+
+                {% if (app.request.getLocale()) == 'fr' %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ 'navbar.language'|trans }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header"><strong>{{ 'navbar.choose'|trans }}</strong></li>
+                            <li class="active"><a href="#"> Fr</a></li>
+                            <li><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'})) }}"> En</a></li>
+                        </ul>
+                    </li>
                 {% endif %}
-                {% if(app.request.getLocale()) =='en' %}
-                        <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Langue</a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class="dropdown-header"><strong>{{ 'navbar.choix'|trans }}</strong></li>
-                                    <li class="">
-                                        <a  href="{{ path(app.request.get('_route'),app.request.get('_route_params')| merge({'_locale':'fr'})) }}"  >Fr</a>
-                                    </li>
-                                    <li class="active"><a href="#">En</a></li>
-                                </ul>
-                        </li>
+                {% if (app.request.getLocale()) == 'en' %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ 'navbar.language'|trans }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header"><strong>{{ 'navbar.choose'|trans }}</strong></li>
+                            <li class=""><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'fr'})) }}"> Fr</a></li>
+                            <li class="active"><a href=""> En</a></li>
+                        </ul>
+                    </li>
                 {% endif %}
+
+
+
+                {% if app.request.attributes.get('_route') == 're_login' %}
+                <li class="active"><a href="{{ path("re_login") }}"/>{{ 'navbar.login'|trans }}</a>
+                    {% else %}
+                <li><a href="{{ path("re_login") }}"/>{{ 'navbar.login'|trans }}</a>
+                    {% endif %}
+
+
             </ul>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        {%  if app.request.attributes.get('_route')=='re_main' %}
-                        <li class=""><a href="{{ path("re_main") }}"/>{{ 'navbar.home'|trans }}</a>
-                        <li class=""><a href="#"/>{{ 'navbar.services'|trans }}</a>
-                        <li class="active"><a href="{{ path("re_contact") }}"/>{{ 'navbar.contact'|trans }}</a>
-                        {% endif %}
-                            {%  if app.request.attributes.get('_route')=='re_contact' %}
-                        <li class=""><a href="{{ path("re_main") }}"/>{{ 'navbar.home'|trans }}</a>
-                        <li class=""><a href="#"/>{{ 'navbar.services'|trans }}</a>
-                        <li class="active"><a href="{{ path("re_contact") }}"/>{{ 'navbar.contact'|trans }}</a>
-                            {% endif %}
-                    </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                {% if app.request.attributes.get('_route') == 're_main' %}
+                <li class="active"><a href="{{ path("re_main") }}"/>{{ 'navbar.home'|trans }}</a>
+                    {% else %}
+                <li><a href="{{ path("re_main") }}"/>{{ 'navbar.home'|trans }}</a>
+                    {% endif %}
+
+                <li><a href="{{ path("re_main") }}"/>{{ 'navbar.services'|trans }}</a>
+
+                    {% if app.request.attributes.get('_route') == 're_contact' %}
+                <li class="active"><a href="{{ path("re_contact") }}"/>{{ 'navbar.contact'|trans }}</a>
+                    {% else %}
+                <li><a href="{{ path("re_contact") }}"/>{{ 'navbar.contact'|trans }}</a>
+                    {% endif %}
+
+
+            </ul>
         </div><!--/.navbar-collapse -->
     </div>
 </nav>

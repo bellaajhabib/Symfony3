@@ -60,7 +60,7 @@ contact:
        head: Erreur formulaire
        timer: Fermeture automatique dans
        unity: secondes
-       
+
 panel:
     1:
       title: titre1

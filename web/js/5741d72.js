@@ -145,7 +145,7 @@ $(document).ready(function() {
 			$addon = $group.find('.input-group-addon'),
 			$icon = $addon.find('span'),
 			state = false;
-            
+
     	if (!$group.data('validate')) {
 			state = $(this).val() ? true : false;
 		}else if ($group.data('validate') == "email") {
@@ -167,7 +167,7 @@ $(document).ready(function() {
 				$addon.addClass('danger');
 				$icon.attr('class', 'glyphicon glyphicon-remove');
 		}
-        
+
         if ($form.find('.input-group-addon.danger').length === 0) {
             $form.find('[type="submit"]').prop('disabled', false);
         }else{
