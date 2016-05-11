@@ -1,3 +1,7 @@
+mo_vent:
+    resource: "@MoVentBundle/Resources/config/routing.yml"
+    prefix:   /
+
 main:
     resource: "@MainBundle/Resources/config/routing.yml"
     prefix:   /

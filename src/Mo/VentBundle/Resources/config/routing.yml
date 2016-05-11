@@ -1,0 +1,3 @@
+mo_vent_homepage:
+    path:     /
+    defaults: { _controller: MoVentBundle:Default:index }
